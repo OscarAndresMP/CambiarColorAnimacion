@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioFinal</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-icoins/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body onload="Cargar()">
+    <div class="fondo">
+    <div class="pelota"></div>
+    <div class="contenedor">
+    <center>
+    <br>
+    <label class="cambiar">Nombre</label>
+    <input type="text" id="nombre" onfocus="CambiarColor(this)" onblur="Reset(this)" placeholder="Nombre"><br><br>
+    <label class="cambiar">Edad</label>
+    <input type="text" id="edad"  onfocus="CambiarColor(this)" onblur="Reset(this)" placeholder="Edad"><br><br>
+    <label class="Cambiar">Sexo</label>
+    <input type="radio" id="sexo1" name="grupo" >Maculino <input type="radio" id="sexo2" name="grupo">Femenino <br><br>
+    <button class="btn-primary" onmouseover="CompruebaDatos()" onmouseout="Vaciar()"><i class="fas fa-spinner fa-spin"></i> Comprobar</button>
+    <input type="text" id="comprueba"><br><br>
+    <button class="btn-primary" onclick="MuestraDatos()"><i class="fas fa-door-closed"></i> Mostrar Datos</button>
+    </center>
+    </div>
+    </div>
+</body>
+</html>
